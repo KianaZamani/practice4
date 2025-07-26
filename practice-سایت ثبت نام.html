@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>فرم ثبت نام</title>
+        <html dir="rtl"></html>
+    </head>
+    <body>
+        <div>
+            <label for="name">نام خود را وارد کنید</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="اینجا بنویسید"
+                required
+            />
+            <br />
+            <label for="last name">فامیلی خود را وارد کنید</label>
+            <input
+                type="text"
+                id="last name"
+                name="last name"
+                placeholder="اینجا بنویسید"
+                required
+            />
+            <br />
+            <label for="email">ایمیل خود را وارد کنید</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="اینجا بنویسید"
+                required
+            />
+            <br />
+            <label for="number">شماره همراه خود را وارد کنید</label>
+            <input
+                type="number"
+                id="number"
+                name="number"
+                placeholder="اینجا بنویسید"
+                required
+            />
+            <br />
+            <label for="password">زمر عبور خود را وارد کنید</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                maxlength="16"
+                placeholder="*بین 8 تا 16 کاراکتر"
+                required
+            />
+            <br />
+
+            <form>
+                <p>جنسیت خود را انتخاب کنید</p>
+                <label>
+                    <input name="1" type="radio" value="female" /> زن
+                </label>
+                <label>
+                    <input name="1" type="radio" value="male" /> مرد
+                </label>
+            </form>
+
+            <br />
+            <select>
+                <option>انتخاب کنید</option>
+                <option>ایران</option>
+                <option>عراق</option>
+                <option>عربستان سعودی</option>
+                <option>پاکستان</option>
+                <option>هند</option>
+                <option>افغانستان</option>
+                <option>تاجیکستان</option>
+                <option>اذربایجان</option>
+            </select>
+            <br />
+            <label>
+                <input type="checkbox" name="rules" />
+                قوانین را قبول میکنم
+            </label>
+        </div>
+        <form action="success.html" method="get">
+            <button type="submit">ثبت‌نام</button>
+        </form>
+    </body>
+</html>
